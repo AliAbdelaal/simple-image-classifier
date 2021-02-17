@@ -7,21 +7,38 @@ from torchvision import transforms
 
 
 class DataWrapper():
+    """A wrapper for torchvision datasets.
+    """
 
     @staticmethod
-    def get_datasets():
+    def get_datasets()->dict:
+        """Get supported datasets and it's corresponding function.
+
+        Returns
+        -------
+        dict
+            A key would represent the dataset name
+            A value would represent the dataset getter function.
+        """
         return {
             "fashion-mnist": DataWrapper.get_fashion_data,
             "cifar10": DataWrapper.get_cifar10_data,
-            "emnist": DataWrapper.get_emnist_data
         }
     
     @staticmethod
-    def get_input_channels():
+    def get_input_channels()->dict:
+        """get input channels for each of the available datasets. 
+
+        Returns
+        -------
+        dict
+            A key would represent the dataset name
+            A value would represent the number of input channels for the given dataset.
+            
+        """
         return {
             "fashion-mnist": 1,
             "cifar10": 3,
-            "emnist": 1
         }
 
 
@@ -54,19 +71,3 @@ class DataWrapper():
         test_set = torchvision.datasets.CIFAR10(
         "./data", download=True, train=False, transform=transforms.Compose([transforms.ToTensor()]))
         return train_set, test_set
-
-    @staticmethod
-    def get_emnist_data()->Tuple[Dataset, Dataset]:
-        """get train and test data from emnist dataset
-
-        Returns
-        -------
-        Tuple[Dataset, Dataset]
-            train_set and test_set Dataset objects.
-        """
-        train_set = torchvision.datasets.EMNIST(
-        "./data", download=True, transform=transforms.Compose([transforms.ToTensor()]))
-        test_set = torchvision.datasets.EMNIST(
-        "./data", download=True, train=False, transform=transforms.Compose([transforms.ToTensor()]))
-        return train_set, test_set
-    

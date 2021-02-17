@@ -16,7 +16,6 @@ class Classifier(nn.Module):
         self.fc3 = nn.Linear(84, labels_count)
 
     def forward(self, x):
-        # change any photo to 28x28
         x = self.pool(F.relu(self.conv1(x)))
         x = self.pool(F.relu(self.conv2(x)))
         x = x.view(-1, 16*4*4)
