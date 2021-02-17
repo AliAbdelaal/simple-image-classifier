@@ -1,0 +1,19 @@
+{
+  "channels": 1,
+  "image_shape": [
+    28,
+    28
+  ],
+  "labels": [
+    "T-shirt/top",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ]
+}
