@@ -1,6 +1,5 @@
 import os
 from typing import Tuple
-import pandas as pd
 from torch.utils.data.dataset import Dataset
 import torchvision
 from torchvision import transforms
