@@ -1,4 +1,4 @@
-from classifier import Brain, DataWrapper
+from MultiClassImageClassifier import Brain, DataWrapper
 
 
 def train_brain(brain:Brain, dataset_name:str)->Brain:

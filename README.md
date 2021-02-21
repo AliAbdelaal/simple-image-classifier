@@ -6,12 +6,14 @@ A Small multi class classifier based on CNN, the classifier support images with 
 
 ## Installation
 
-Create a **`python3.7`** virtualenv and install the `requirements.txt` file.
+You need to clone the repo and create a **`python3.7`** virtualenv as follows.
 
 ```bash
+$git clone https://github.com/AliAbdelaal/simple-image-classifier.git
+$cd simple-image-classifier/
 $python -m venv venv
 $source venv/bin/activate
-$pip install -r requirements.txt
+$pip install .
 ```
 
 ## Usage
@@ -96,7 +98,13 @@ The prediction dictionary is as follows for a classifier that is trained on `CIF
 
 ## Use Streamlit to test the model
 
-A streamlit app is included with the repository to show case the model, you can upload images to the app and get predictions from your trained model.
+Additionally yoy can run a streamlit app to showcase the model, first you will need to install it.
+
+```bash
+$pip install streamlit
+```
+
+Once streamlit is downloaded, you can upload images to the app and get predictions from your trained model.
 
 To run the app use the following command.
 

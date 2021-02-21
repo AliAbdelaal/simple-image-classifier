@@ -12,7 +12,7 @@ from torch.utils.data import Dataset, DataLoader, dataloader
 import torchvision.transforms as transforms
 from sklearn.metrics import accuracy_score, classification_report
 
-from classifier.model import Classifier
+from MultiClassImageClassifier.model import Classifier
 
 
 class Brain():
