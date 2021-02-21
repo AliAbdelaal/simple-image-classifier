@@ -6,12 +6,14 @@ A Small multi class classifier based on CNN, the classifier support images with 
 
 ## Installation
 
-Create a **`python3.7`** virtualenv and install the `requirements.txt` file.
+You need to clone the repo and create a **`python3.7`** virtualenv as follows.
 
 ```bash
+$git clone https://github.com/AliAbdelaal/simple-image-classifier.git
+$cd simple-image-classifier/
 $python -m venv venv
 $source venv/bin/activate
-$pip install -r requirements.txt
+$pip install .
 ```
 
 ## Usage
