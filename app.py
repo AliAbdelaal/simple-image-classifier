@@ -3,7 +3,7 @@ import torchvision
 from torchvision import transforms
 from sklearn.metrics import classification_report
 
-from classifier import Brain
+from MultiClassImageClassifier import Brain
 
 # app = Flask(__name__)
 brain = Brain(epochs=5)

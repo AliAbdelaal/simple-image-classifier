@@ -96,7 +96,13 @@ The prediction dictionary is as follows for a classifier that is trained on `CIF
 
 ## Use Streamlit to test the model
 
-A streamlit app is included with the repository to show case the model, you can upload images to the app and get predictions from your trained model.
+Additionally yoy can run a streamlit app to showcase the model, first you will need to install it.
+
+```bash
+$pip install streamlit
+```
+
+Once streamlit is downloaded, you can upload images to the app and get predictions from your trained model.
 
 To run the app use the following command.
 
